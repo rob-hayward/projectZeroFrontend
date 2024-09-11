@@ -1,0 +1,60 @@
+.home-page {
+    background-image: url('../../images/projectZeroHome.png');
+    background-size: cover;
+    background-position: calc(50% - 20px) center; /* Shifted 20px to the left */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .home-page h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900; 
+    margin-top: 18.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .home-page h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-weight: bold;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+  
+  .enter-button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 10rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .enter-button:hover {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  }
+  
+  .enter-button:focus {
+    outline: none;
+  }
