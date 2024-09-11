@@ -1,22 +1,15 @@
 import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth } from '../../hooks/useAuth';
 
 const UserDashboard: React.FC = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
-
-  if (isLoading) {
-    return <div>Loading ...</div>;
-  }
+  const { user, logout } = useAuth();
 
   return (
-    isAuthenticated ? (
-      <div>
-        <h2>User Dashboard</h2>
-        <p>Welcome, {user?.name}!</p>
-      </div>
-    ) : (
-      <div>Please log in to view this page.</div>
-    )
+    <div>
+      <h1>Welcome, {user?.name}!</h1>
+      <p>This is your dashboard.</p>
+      <button onClick={() => logout()}>Logout</button>
+    </div>
   );
 };
 
